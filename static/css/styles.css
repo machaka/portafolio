@@ -1,8 +1,35 @@
-.Header {
-    background: #1e1e1e;
+.Body {
+    font-size: 16px;
 }
 
+.Header {
+    background: #1e1e1e;
+    display: inline-block;
+
+    /*al sumar position relative, tengo posibilidad de usar top,left,right, bottom,right*/
+    /*position: relative;
+    top: 20px;
+    left: 20px;*/
+    margin-left: 50px;
+}
+
+.Header-image {
+    border-radius: 120px;
+    border-style: solid;
+    border-color: #FFF;
+
+}
 /* Se puede hacer selector por atributo[href="yo"]*/
+
+.MainMenu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: red;
+    z-index: 3;
+
+}
+
 .MainMenu-link {
     color: #07AFCC;
     text-decoration: none;
@@ -17,13 +44,23 @@
     color: red;
 }
 
-.Header nav {
-    /*background: #ffff00;*/
-}
+
 
 .Profile {
     background: yellow;
     color: #FFF;
+    /*display: inline-block;*/
+    position: relative;
+    /*display: inline-block;*/
+    /*Para poner la caja en su posicion superior*/
+    /*vertical-align: top;*/
+}
+
+.Profile-span{
+    background: red;
+    position: absolute;
+    top: 20px;
+    left: 20px;
 }
 
 .Profile figure a {
