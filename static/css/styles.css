@@ -1,0 +1,39 @@
+.Header {
+    background: #1e1e1e;
+}
+
+/* Se puede hacer selector por atributo[href="yo"]*/
+.MainMenu-link {
+    color: #07AFCC;
+    text-decoration: none;
+}
+
+.MainMenu-link:hover {
+    color: #FFF;
+}
+
+/*Los estilos que vemos en todos lados, es decir si comparten lo mismos estilos, los ponemos como utilidade*/
+.u-title {
+    color: red;
+}
+
+.Header nav {
+    /*background: #ffff00;*/
+}
+
+.Profile {
+    background: yellow;
+    color: #FFF;
+}
+
+.Profile figure a {
+    color: #FFF;
+}
+
+.Work {
+    background: green;
+}
+
+.Footer {
+    background: darkblue;
+}
