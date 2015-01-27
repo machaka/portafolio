@@ -1,76 +1,195 @@
-.Body {
-    font-size: 16px;
+/*Los estilos que vemos en todos lados, es decir si comparten lo mismos estilos, los ponemos como utilidade*/
+.u-title {
+    color: #00DAFF;
+    border-bottom: 0.1em dashed #00DAFF;
+    font-size: 1.5em;
+    font-weight: 400;
+    padding-bottom: 0.4em;
+    text-align: center;
+
 }
 
 .Header {
-    background: #1e1e1e;
-    display: inline-block;
-
+    /*background: #1e1e1e;*/
+    /*display: inline-block;*/
     /*al sumar position relative, tengo posibilidad de usar top,left,right, bottom,right*/
     /*position: relative;
     top: 20px;
     left: 20px;*/
-    margin-left: 50px;
+    /*margin-left: 50px;*/
+    margin-top: 3.6em;
+    background: url('../images/portada.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    /*Acomodar la imagen pra que ocupe todo el ancho de la pantalla*/
+    background-size: cover;
+    text-align: center;
+    padding: 1.2em;
 }
 
 .Header-image {
-    border-radius: 120px;
-    border-style: solid;
-    border-color: #FFF;
+    /*border: tamapo, tipo y color*/;
+    border: 0.5em solid white;
+    border-radius: 50%;
+    width: 15em;
+    /*border-style: solid;
+    border-color: #FFF;*/
 
+}
+
+.Header-imageContainer {
+    margin: 0;
+}
+
+.Header-link,
+.Header-name {
+    color: white;
+}
+
+.Header-link {
+    font-weight: bold;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+.Header-name {
+    font-size: 1.5em;
+    font-weight: 300;
+    margin: 0;
 }
 /* Se puede hacer selector por atributo[href="yo"]*/
 
 .MainMenu {
-    position: fixed;
+    /*position: fixed;
     top: 0;
     right: 0;
     background: red;
-    z-index: 3;
+    z-index: 3;*/
+    background: #1e1e1e;
+    text-align: center;
+    height: 3.6em;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 2;
 
 }
 
+.MainMenu-item{
+    display: inline-block;
+}
+
 .MainMenu-link {
-    color: #07AFCC;
+    color: #00DAFF;
     text-decoration: none;
+    line-height: 3.6em;
+    padding-left: 2em;
 }
 
 .MainMenu-link:hover {
     color: #FFF;
 }
 
-/*Los estilos que vemos en todos lados, es decir si comparten lo mismos estilos, los ponemos como utilidade*/
-.u-title {
-    color: red;
+.MainMenu-list {
+    margin: 0;
+    padding: 0;
+
 }
 
-
-
 .Profile {
-    background: yellow;
+
     color: #FFF;
+    text-align: center;
     /*display: inline-block;*/
-    position: relative;
+    /*position: relative;*/
     /*display: inline-block;*/
     /*Para poner la caja en su posicion superior*/
     /*vertical-align: top;*/
 }
 
-.Profile-span{
-    background: red;
-    position: absolute;
-    top: 20px;
-    left: 20px;
+.Profile-link {
+    background: orange;
+    text-decoration: none;
+    color: white;
+    padding: 0.5em 1em;
+    border-radius: 2em;
+    margin-right: 0.5em;
 }
 
-.Profile figure a {
-    color: #FFF;
-}
 
 .Work {
-    background: green;
+    margin: 2em;
+    text-align: center;
+}
+
+.Work-imageDescription {
+    font-size: 1.1em;
+    font-style: italic;
+    color:#515151;
+}
+
+.Work-item{
+    display: inline-block;
+    margin-right: 1.8em;
+    margin-bottom: 1.8em;
+}
+
+.Work-imageContainer {
+    margin: 0;
 }
 
 .Footer {
-    background: darkblue;
+    background: url('../images/footer.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 2em;
+    padding-top: 2em;
+    text-align: center;
+}
+
+.Footer-form{
+    text-align: center;
+    display: inline-block;
+}
+
+.Footer-formButton {
+    border:none;
+    background: orange;
+    color: white;
+    border-radius: 1em;
+    padding: 0.5em 1.5em;
+    font-weight: bold;
+}
+
+.Footer-formInput,
+.Footer-textArea {
+    background: white;
+    font-weight: bold;
+    border-radius: 2em;
+    border: none;
+    display: block;
+    padding: 0.5em 0.8em;
+    margin: 0 auto 1em;
+
+}
+
+
+
+.Footer-left{
+    display: inline-block;
+    width: 32em;
+    text-align: center;
+    vertical-align: top;
+}
+
+
+.Footer-textArea
+{
+    resize: none;
+}
+
+.Footer-title{
+    color:white;
 }
