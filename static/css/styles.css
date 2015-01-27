@@ -31,10 +31,17 @@
     /*border: tamapo, tipo y color*/;
     border: 0.5em solid white;
     border-radius: 50%;
-    width: 15em;
+    max-width: 15em;
+
     /*border-style: solid;
     border-color: #FFF;*/
+}
 
+.Header-image:hover {
+    -webkit-transition: 2s;
+    border-color: orange;
+    /*-webkit-transform: rotateY(360deg);*/
+    -webkit-transform: rotateX(360deg);
 }
 
 .Header-imageContainer {
@@ -179,7 +186,7 @@
 
 .Footer-left{
     display: inline-block;
-    width: 32em;
+    max-width: 32em;
     text-align: center;
     vertical-align: top;
 }
